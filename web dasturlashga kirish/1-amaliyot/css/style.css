@@ -1,3 +1,98 @@
-* {
+:root {
+  --oq: white;                         
+  --yashil: #2e5339;                   
+  --jigar: #3b2a1a;                    
+  --oltin: rgb(200, 150, 62);           
+  --yashil-och: rgba(46, 83, 57, 0.1);  
+}
 
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--jigar);
+  background-color: var(--oq);
+}
+
+header {
+  background-color: var(--yashil);
+  color: var(--oq);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--oq);
+}
+
+#tepa {
+  text-align: center;
+}
+
+h2, h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--yashil);
+}
+
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: var(--oltin);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+h3 {
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--yashil);
+}
+
+mark {
+  background-color: var(--oltin);
+  color: var(--jigar);
+}
+
+li {
+  line-height: 1.8;
+}
+
+ul ul li {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--yashil);
+}
+
+a {
+  color: var(--yashil);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--jigar);
+  background-color: var(--oltin);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--jigar);
+}
+
+main section a {
+  letter-spacing: 0.5px;
 }
