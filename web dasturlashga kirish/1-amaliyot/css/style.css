@@ -62,11 +62,6 @@ strong {
   color: var(--yashil);
 }
 
-mark {
-  background-color: var(--oltin);
-  color: var(--jigar);
-}
-
 li {
   line-height: 1.8;
 }
