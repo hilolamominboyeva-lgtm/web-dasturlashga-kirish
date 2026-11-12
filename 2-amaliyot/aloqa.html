@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Aloqa va stol band qilish — Xorazm Dasturxoni</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="tepa">
+    <div class="konteyner">
+      <h1>Aloqa</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="batasil.html">Batafsil menyu</a></li>
+          <li><a href="aloqa.html">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="konteyner">
+    <div class="sahifa">
+      <div class="asosiy">
+        <section>
+          <h2>Stol band qilish</h2>
+          <article class="karta">
+            <form class="forma" action="#" method="post">
+              <div class="maydon">
+                <label for="ism">Ismingiz</label>
+                <input type="text" id="ism" name="ism" required>
+              </div>
+              <div class="maydon">
+                <label for="tel">Telefon raqami</label>
+                <input type="tel" name="tel" required>
+              </div>
+              <div class="maydon">
+                <label for="sana">Sana</label>
+                <input type="date" required>
+              </div>
+              <div class="maydon">
+                <label for="vaqt">Vaqt</label>
+                <select id="vaqt" name="vaqt">
+                  <option value="12">12:00</option>
+                  <option value="14">14:00</option>
+                  <option value="18">18:00</option>
+                  <option value="20">20:00</option>
+                </select>
+              </div>
+              <div class="maydon">
+                <label for="odam">Mehmonlar soni</label>
+                <input type="number" id="odam" name="odam" min="1" max="30" value="2">
+              </div>
+              <fieldset>
+                <legend>Stol joyi</legend>
+                <div class="variantlar">
+                  <div class="variant">
+                    <input type="radio" id="ichkarida" name="joy" value="ichkarida" checked>
+                    <label for="ichkarida">Zal ichida</label>
+                  </div>
+                  <div class="variant">
+                    <input type="radio" id="ayvonda" name="joy" value="ayvonda">
+                    <label for="ayvonda">Ayvonda</label>
+                  </div>
+                </div>
+              </fieldset>
+              <button type="submit">Yuborish</button>
+            </form>
+          </article>
+        </section>
+      </div>
+      <aside>
+        <h3>Ish vaqti</h3>
+        <p>Har kuni: 09:00 — 23:00</p>
+        <h3>Telefon</h3>
+        <p>+998 90 000 00 00</p>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
