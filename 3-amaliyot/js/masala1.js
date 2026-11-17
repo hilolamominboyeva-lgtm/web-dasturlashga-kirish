@@ -1,3 +1,8 @@
+// 1-masala. Sonlar  ·  oson
+// Funksiya: engKattaRaqam(n)
+// Musbat butun son berilgan. Uning eng katta raqamini qaytaring. Satrga aylantirmasdan yeching.
+// engKattaRaqam(58193)              // → 9
+// engKattaRaqam(4440)               // → 4
 function engKattaRaqam(n) {
   let eng = 0;
   while (n > 0) {

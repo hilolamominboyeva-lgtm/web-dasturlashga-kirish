@@ -1,3 +1,10 @@
+// 4-masala. Satrlar va sonlar  ·  o‘rtacha
+// Funksiya: parolKuchi(parol)
+// Parol berilgan. 4 ta shartni tekshiring: uzunligi kamida 8; raqam bor; katta harf bor; maxsus belgi (!@#$
+// %&*) bor. 0–1 shart bajarilsa "kuchsiz", 2–3 ta bo‘lsa "o‘rtacha", 4 tasi bo‘lsa "kuchli" qaytaring.
+// parolKuchi("Salom2026!")          // → "kuchli"
+// parolKuchi("parol123")            // → "o‘rtacha"
+// parolKuchi("abc")                 // → "kuchsiz"
 function parolKuchi(parol) {
   let shart = 0;
 

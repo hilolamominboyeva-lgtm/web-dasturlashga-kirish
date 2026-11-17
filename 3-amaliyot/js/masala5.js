@@ -1,3 +1,9 @@
+// 5-masala. Massivlar va obyektlar  ·  o‘rtacha
+// Funksiya: saralanganlarniBirlashtir(a, b)
+// O‘sish tartibida saralangan ikki massiv berilgan. Ularni bitta saralangan massivga birlashtiring. sort() 
+// ishlatmang — ikki ko‘rsatkich usulidan foydalaning.
+// saralanganlarniBirlashtir([1, 4, 7], [2, 3, 8])  // → [1, 2, 3, 4, 7, 8]
+// saralanganlarniBirlashtir([], [5])  // → [5]
 function saralanganlarniBirlashtir(a, b) {
   const natija = [];
   let i = 0;
