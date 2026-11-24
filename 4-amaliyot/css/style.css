@@ -1,0 +1,298 @@
+:root {
+  --oq: white;
+  --yashil: #2e5339;
+  --jigar: #3b2a1a;
+  --oltin: rgb(200, 150, 62);
+  --yashil-och: rgba(46, 83, 57, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--jigar);
+  background-color: var(--oq);
+}
+
+.konteyner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header {
+  background-color: var(--yashil);
+  color: var(--oq);
+  padding: 20px 0 12px;
+}
+
+#tepa {
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--oq);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a,
+nav a:visited {
+  color: var(--oq);
+  text-decoration: none;
+  padding: 4px 10px;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  color: var(--jigar);
+  background-color: var(--oltin);
+  border-bottom-color: var(--oltin);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+h2,
+h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--yashil);
+}
+
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: var(--oltin);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+h3 {
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--yashil);
+}
+
+main a {
+  color: var(--yashil);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main a:hover {
+  color: var(--jigar);
+  background-color: var(--oltin);
+  text-decoration: none;
+}
+
+main a:visited {
+  color: var(--jigar);
+}
+
+main ul {
+  padding-left: 24px;
+}
+
+main li::marker {
+  color: var(--oltin);
+}
+
+main ul ul {
+  margin: 4px 0 8px;
+}
+
+.taomlar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.rasm-blok {
+  margin: 0;
+  text-align: center;
+}
+
+.rasm-blok img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.rasm-blok figcaption {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.narx {
+  display: block;
+  margin-top: 6px;
+  font-weight: 700;
+  color: var(--oltin);
+}
+
+.sahifa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.asosiy {
+  flex: 3 1 560px;
+  min-width: 0;
+}
+
+aside {
+  flex: 1 1 240px;
+  padding: 16px 24px;
+  border: 2px solid var(--oltin);
+  border-radius: 12px;
+  background-color: var(--yashil-och);
+}
+
+aside h3 {
+  margin: 8px 0;
+}
+
+aside p {
+  margin: 0 0 12px;
+  text-align: left;
+}
+
+.karta {
+  padding: 16px 24px;
+  border: 1px solid var(--oltin);
+  border-radius: 12px;
+  background-color: var(--oq);
+  box-shadow: 0 2px 8px rgba(59, 42, 26, 0.15);
+}
+
+.karta:hover {
+  box-shadow: 0 6px 16px rgba(59, 42, 26, 0.3);
+}
+
+.forma {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.maydon {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label,
+legend {
+  font-weight: 700;
+  color: var(--yashil);
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--jigar);
+  border-radius: 8px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid var(--oltin);
+}
+
+fieldset {
+  padding: 12px 16px;
+  border: 1px solid var(--oltin);
+  border-radius: 8px;
+}
+
+.variantlar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.variant {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.variant label {
+  font-weight: 400;
+  color: var(--jigar);
+}
+
+button[type="submit"] {
+  align-self: flex-start;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--yashil);
+  color: var(--oq);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--oltin);
+  color: var(--jigar);
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .taomlar {
+    grid-template-columns: 1fr;
+  }
+}
