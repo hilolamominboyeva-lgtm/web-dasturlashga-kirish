@@ -2,29 +2,41 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
-  <title>Xorazm Dasturxoni — choyxona menyusi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xorazm Dasturxoni — Choyxona menyusi</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header id="tepa">
-    <div class="konteyner">
-      <h1>Xorazm Dasturxoni</h1>
-      <nav>
+    <div class="konteyner header-ichki">
+      <div class="header-ust">
+        <h1>Xorazm Dasturxoni</h1>
+        <div class="header-amallar">
+          <button type="button" class="tungi-rejim-btn" aria-pressed="false">Tungi rejim</button>
+          <a href="katalog.html" class="savat-havola">
+            Savat: <span class="savat-hisoblagich">0</span>
+          </a>
+          <button type="button" id="burger-btn" class="burger-btn" aria-label="Menyuni ochish" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </div>
+      <nav id="asosiy-nav">
         <ul>
           <li><a href="index.html">Bosh sahifa</a></li>
-          <li><a href="batasil.html">Batafsil menyu</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
           <li><a href="aloqa.html">Aloqa</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="konteyner">
     <section>
       <h2>Menyu turkumlari</h2>
       <p>
-        Quyida choyxonamiz menyusining asosiy turkumlari keltirilgan. To'liq tavsif va narxlarni
-        <a href="batasil.html">batafsil sahifadan</a> topasiz.
+        Quyida choyxonamiz menyusining asosiy turkumlari keltirilgan. To'liq tavsif, qidiruv va narxlarni
+        <a href="katalog.html">katalog sahifasidan</a> ko'rishingiz mumkin.
       </p>
 
       <h3>Taomlar ro'yxati</h3>
@@ -42,13 +54,17 @@
             <li>Xorazm palovi</li>
             <li>Tuxum barak</li>
             <li>Dimlama</li>
+            <li>Qovurdoq</li>
           </ul>
         </li>
         <li>
           Ichimliklar va shirinliklar
           <ul>
             <li>Ko'k choy</li>
+            <li>Qora choy (limonli)</li>
+            <li>Ayron (salqin)</li>
             <li>Qatlama</li>
+            <li>Chak-chak</li>
           </ul>
         </li>
       </ul>
@@ -62,5 +78,7 @@
       </p>
     </section>
   </main>
+
+  <script src="js/ui.js"></script>
 </body>
 </html>

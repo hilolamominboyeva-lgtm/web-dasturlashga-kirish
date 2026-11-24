@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog — Xorazm Dasturxoni</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="tepa">
+    <div class="konteyner header-ichki">
+      <div class="header-ust">
+        <h1>Taomlar katalogi</h1>
+        <div class="header-amallar">
+          <button type="button" class="tungi-rejim-btn" aria-pressed="false">Tungi rejim</button>
+          <a href="katalog.html" class="savat-havola">
+            Savat: <span class="savat-hisoblagich">0</span>
+          </a>
+          <button type="button" id="burger-btn" class="burger-btn" aria-label="Menyuni ochish" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </div>
+      <nav id="asosiy-nav">
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
+          <li><a href="aloqa.html">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="konteyner">
+    <section aria-labelledby="stat-sarlavha">
+      <h2 id="stat-sarlavha">Menyu statistikasi</h2>
+      <div class="statistika-grid">
+        <article class="stat-karta">
+          <span>Jami taomlar soni</span>
+          <strong id="stat-jami">0</strong>
+        </article>
+        <article class="stat-karta">
+          <span>O'rtacha narx</span>
+          <strong id="stat-ortacha">0 so'm</strong>
+        </article>
+        <article class="stat-karta">
+          <span>Eng qimmat taom</span>
+          <strong id="stat-eng-qimmat">—</strong>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="filtr-sarlavha">
+      <h2 id="filtr-sarlavha">Qidiruv, filtr va saralash</h2>
+      <div class="filtr-panel">
+        <div class="maydon">
+          <label for="qidiruv-input">Nom yoki teg bo'yicha qidiruv</label>
+          <input type="text" id="qidiruv-input" placeholder="Masalan: shivit, palov, choy...">
+        </div>
+
+        <div class="maydon">
+          <label for="kategoriya-select">Kategoriya</label>
+          <select id="kategoriya-select">
+            <option value="barchasi">Barcha kategoriyalar</option>
+            <option value="birinchi">Birinchi taomlar</option>
+            <option value="ikkinchi">Ikkinchi taomlar</option>
+            <option value="ichimlik">Ichimliklar</option>
+            <option value="shirinlik">Shirinliklar</option>
+          </select>
+        </div>
+
+        <div class="maydon">
+          <label for="saralash-select">Saralash</label>
+          <select id="saralash-select">
+            <option value="standart">Standart tartib</option>
+            <option value="narx-osish">Narx: arzonidan qimmatiga</option>
+            <option value="narx-kamayish">Narx: qimmatidan arzoniga</option>
+            <option value="nom-az">Nom: A — Z</option>
+            <option value="nom-za">Nom: Z — A</option>
+          </select>
+        </div>
+
+        <div class="maydon mavjud-filtr">
+          <label class="checkbox-label">
+            <input type="checkbox" id="faqat-mavjud">
+            <span>Faqat mavjud taomlar</span>
+          </label>
+        </div>
+      </div>
+
+      <p class="natija-satr">
+        Ko'rsatilayotgan taomlar soni: <strong id="natija-soni">0</strong>
+      </p>
+
+      <p id="bosh-xabar" class="bosh-xabar" hidden></p>
+      <div id="katalog-konteyner" class="taomlar"></div>
+    </section>
+  </main>
+
+  <!-- Modal oyna -->
+  <div id="taom-modal" class="modal-fon" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-nom">
+    <div class="modal-oyna">
+      <button type="button" id="modal-yopish" class="modal-yopish" aria-label="Modalni yopish">&times;</button>
+      <img id="modal-rasm" src="" alt="" class="modal-rasm">
+      <div class="modal-tarkib">
+        <span id="modal-kategoriya" class="taom-kategoriya"></span>
+        <h3 id="modal-nom"></h3>
+        <p id="modal-tavsif"></p>
+        <div id="modal-teglar" class="teglar"></div>
+        <p class="modal-qator"><strong>Narxi:</strong> <span id="modal-narx"></span></p>
+        <p class="modal-qator"><strong>Holati:</strong> <span id="modal-holat"></span></p>
+        <button type="button" id="modal-savat-btn" class="btn btn-asosiy">Savatga qo'shish</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/katalog.js"></script>
+</body>
+</html>

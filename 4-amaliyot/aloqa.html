@@ -2,41 +2,66 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aloqa va stol band qilish — Xorazm Dasturxoni</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header id="tepa">
-    <div class="konteyner">
-      <h1>Aloqa</h1>
-      <nav>
+    <div class="konteyner header-ichki">
+      <div class="header-ust">
+        <h1>Aloqa</h1>
+        <div class="header-amallar">
+          <button type="button" class="tungi-rejim-btn" aria-pressed="false">Tungi rejim</button>
+          <a href="katalog.html" class="savat-havola">
+            Savat: <span class="savat-hisoblagich">0</span>
+          </a>
+          <button type="button" id="burger-btn" class="burger-btn" aria-label="Menyuni ochish" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </div>
+      <nav id="asosiy-nav">
         <ul>
           <li><a href="index.html">Bosh sahifa</a></li>
-          <li><a href="batasil.html">Batafsil menyu</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
           <li><a href="aloqa.html">Aloqa</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main class="konteyner">
     <div class="sahifa">
       <div class="asosiy">
         <section>
           <h2>Stol band qilish</h2>
           <article class="karta">
-            <form class="forma" action="#" method="post">
+            <form id="aloqa-forma" class="forma" action="#" method="post" novalidate>
               <div class="maydon">
                 <label for="ism">Ismingiz</label>
-                <input type="text" id="ism" name="ism" required>
+                <input type="text" id="ism" name="ism" placeholder="Masalan: Dilshod">
+                <span class="xato-matn" aria-live="polite"></span>
               </div>
+
               <div class="maydon">
-                <label for="tel">Telefon raqami</label>
-                <input type="tel" name="tel" required>
+                <label for="email">Email manzil</label>
+                <input type="email" id="email" name="email" placeholder="masalan@mail.uz">
+                <span class="xato-matn" aria-live="polite"></span>
               </div>
+
+              <div class="maydon">
+                <label for="tel">Telefon raqami (+998XXXXXXXXX)</label>
+                <input type="tel" id="tel" name="tel" placeholder="+998901234567">
+                <span class="xato-matn" aria-live="polite"></span>
+              </div>
+
               <div class="maydon">
                 <label for="sana">Sana</label>
-                <input type="date" required>
+                <input type="date" id="sana" name="sana">
+                <span class="xato-matn" aria-live="polite"></span>
               </div>
+
               <div class="maydon">
                 <label for="vaqt">Vaqt</label>
                 <select id="vaqt" name="vaqt">
@@ -46,10 +71,12 @@
                   <option value="20">20:00</option>
                 </select>
               </div>
+
               <div class="maydon">
                 <label for="odam">Mehmonlar soni</label>
                 <input type="number" id="odam" name="odam" min="1" max="30" value="2">
               </div>
+
               <fieldset>
                 <legend>Stol joyi</legend>
                 <div class="variantlar">
@@ -63,11 +90,20 @@
                   </div>
                 </div>
               </fieldset>
-              <button type="submit">Yuborish</button>
+
+              <div class="maydon">
+                <label for="izoh">Qo'shimcha izoh (ixtiyoriy, 10–300 belgi)</label>
+                <textarea id="izoh" name="izoh" rows="3" placeholder="Maxsus buyurtma yoki istaklaringiz..."></textarea>
+                <span class="xato-matn" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-asosiy">Yuborish</button>
+              <p id="forma-muvaffaqiyat" class="muvaffaqiyat-matn" aria-live="polite"></p>
             </form>
           </article>
         </section>
       </div>
+
       <aside>
         <h3>Ish vaqti</h3>
         <p>Har kuni: 09:00 — 23:00</p>
@@ -76,6 +112,7 @@
       </aside>
     </div>
   </main>
+
+  <script src="js/ui.js"></script>
 </body>
 </html>
-G
