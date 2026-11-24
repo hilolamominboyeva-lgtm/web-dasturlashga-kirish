@@ -8,7 +8,7 @@ const taomlar = [
     mavjud: true,
     rasm: "rasmlar/shivitosh.jfif",
     teglar: ["xorazm", "ko'katli", "mashhur"],
-    tavsif: "Ko'katli yashil xamirdan tayyorlangan, qatiq va go'sht qiymasi bilan beriladigan an'anaviy Xorazm taomi."
+    tavsif: "Ko'katli yashil xamirdan tayyorlangan, qatiq va go'sht qiymasi bilan beriladigan an'anaviy Xorazm taomi, qalay ?!."
   },
   {
     id: 2,
